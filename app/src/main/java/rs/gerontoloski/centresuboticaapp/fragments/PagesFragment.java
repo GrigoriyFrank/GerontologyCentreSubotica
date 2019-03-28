@@ -546,8 +546,6 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
 
 
     private class MyWebChromeClient extends WebChromeClient {
-        FrameLayout.LayoutParams LayoutParameters = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
-                FrameLayout.LayoutParams.MATCH_PARENT);
 
         @Override
         public void onShowCustomView(View view, CustomViewCallback callback) {
