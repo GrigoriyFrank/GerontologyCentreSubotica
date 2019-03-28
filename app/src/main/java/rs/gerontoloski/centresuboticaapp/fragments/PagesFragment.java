@@ -6,11 +6,11 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+
 import androidx.fragment.app.Fragment;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.internal.EverythingIsNonNull;
 import rs.gerontoloski.centresuboticaapp.App;
 import rs.gerontoloski.centresuboticaapp.Constants;
 import rs.gerontoloski.centresuboticaapp.R;
