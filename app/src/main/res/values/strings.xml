@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">GERONTOLOŠKI CENTAR SUBOTICA</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="logo_title_serbian">GERONTOLOŠKI CENTAR SUBOTICA</string>
+    <string name="logo_title_english">GERONTOLOGY CENTRE SUBOTICA</string>
+    <string name="logo_title_hungarian">GERONTOLÓGIAI KÖZPONT SZABADKA</string>
+    <string name="logo_title_romana">GERENTO CENTRI SUBOTICA</string>
+
+    <string name="home_serbian">Početna</string>
+    <string name="home_english">Home</string>
+    <string name="home_hungarian">Kezdőlap</string>
+    <string name="home_romana">Angluni</string>
+
+    <string name="about_us_serbian">O nama</string>
+    <string name="about_us_english">About us</string>
+    <string name="about_us_hungarian">Rólunk</string>
+    <string name="about_us_romana">Amendar</string>
+
+    <string name="activities_serbian">Delatnosti</string>
+    <string name="activities_english">Activities</string>
+    <string name="activities_hungarian">Szolgáltatások</string>
+    <string name="activities_romana">Amare buća</string>
+
+    <string name="services_serbian">Usluge</string>
+    <string name="services_english">Services</string>
+    <string name="services_hungarian">Szolgáltatások</string>
+    <string name="services_romana">Kandipe</string>
+
+    <string name="residential_homes_serbian">Domovi</string>
+    <string name="residential_homes_english">Residential homes</string>
+    <string name="residential_homes_hungarian">Otthonok</string>
+    <string name="residential_homes_romana">Ćhera</string>
+
+    <string name="map_serbian">Mapa</string>
+    <string name="map_english">Map</string>
+    <string name="map_hungarian">Térkép</string>
+    <string name="map_romana">Mappát</string>
+
+    <string name="contact_serbian">Kontakt</string>
+    <string name="contact_english">Contact</string>
+    <string name="contact_hungarian">Kapcsolat</string>
+    <string name="contact_romana">Kontakto</string>
+
+
+    <string name="copyright_serbian">&#169; GERONTOLOŠKI CENTAR SUBOTICA 2019</string>
+    <string name="copyright_english">&#169; GERONTOLOGY CENTRE SUBOTICA 2019</string>
+    <string name="copyright_hungarian">&#169; GERONTOLÓGIAI KÖZPONT SZABADKA 2019</string>
+    <string name="copyright_romana">&#169; GERENTO CENTRI SUBOTICA 2019</string>
+
+    <string name="hamburger_footer_app_funds_serbian">Izradu ove aplikacije za mobilni telefon finasirala je Fondacija za otvoreno društvo, Srbija u okviru projekta - Smanjenje isključenosti pripadnika romske zajednice iz primene socijalne politike i socijalne zaštite – „Brigom protiv predrasuda“.</string>
+    <string name="hamburger_footer_app_views_serbian">Stavovi i pretpostavke izneti na ovom sajtu predstavljaju odgovornost Gerontološkog centra Subotica i nisu nužno stavovi i pretpostavke Fondacije za otvoreno društvo, Srbija.</string>
+    <string name="hamburger_footer_app_funds_english">The development of the present mobile phone application was funded by the Open Society Foundation, Serbia within the Project - Reduction of Exclusion of Roma Community members from the social protection policy implementation - "Against Prejudice through Care".</string>
+    <string name="hamburger_footer_app_views_english">The views and assumptions expressed on this website are solely those of Gerontology Centre Subotica and are not necessarily those of the Open Society Foundation, Serbia.</string>
+    <string name="hamburger_footer_app_funds_hungarian">A mobil telefonra vonatkozó alkalmazás fejlesztését a Nyílt Társadalom Alapítvány, Szerbia finanszírozta a projekt keretében - A roma közösség tagjai kirekesztésének csökkentése a szociálpolitika és a szociális védelem alkalmazásából - „Törődéssel az előítélet ellen”.</string>
+    <string name="hamburger_footer_app_views_hungarian">Ezen a honlapon közzétett nézetek és feltételezések a Gerontológiai Központ Szabadka felelőssége és nem feltétlenül a Nyílt Társadalom Alapítvány, Szerbia nézetei és feltevései.</string>
+    <string name="hamburger_footer_app_funds_romana">Te kerelpes kaja aplikacija palo mobilno telefono poćinda e Fondacija palo putardo ćidipe, Srbija katar o projekto-Ciknjaripe čhutimasko pe rig e Rromengo andar e socijane politike the socijalno ažutipe-„Grižava opral pe bange gindurja“.</string>
+    <string name="hamburger_footer_app_views_romana">O mothovipe the gindurja save si čhutine pe kava sajto inkalda o Gerontološko maškar andar e Subotica thaj naj musaj te avel mothovipe thaj gindurja e Fondacijako palo putardo ćidipe, Srbija.</string>
+
+
+    <!--error info-->
+    <string name="something_wrong_with_server">Server is down</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="try_again">Try Again</string>
+
+
+</resources>
