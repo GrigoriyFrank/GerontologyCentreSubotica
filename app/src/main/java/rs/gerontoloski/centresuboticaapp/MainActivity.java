@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 showFragment(Constants.HOME_MENU_ITEM_POSITION, false);
                                 drawerMenuItemId = Constants.HOME_MENU_ITEM_POSITION;
-                                setTitleOfActivityAfterLanguageChanged(loadPreferences(),Constants.HOME_MENU_ITEM_POSITION);
+                                setTitleOfActivityAfterLanguageChanged(loadPreferences(), Constants.HOME_MENU_ITEM_POSITION);
                                 showEmailSendButton = false;
                                 break;
 
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 showFragment(Constants.ABOUT_US_MENU_ITEM_POSITION, false);
                                 drawerMenuItemId = Constants.ABOUT_US_MENU_ITEM_POSITION;
-                                setTitleOfActivityAfterLanguageChanged(loadPreferences(),Constants.ABOUT_US_MENU_ITEM_POSITION);
+                                setTitleOfActivityAfterLanguageChanged(loadPreferences(), Constants.ABOUT_US_MENU_ITEM_POSITION);
                                 showEmailSendButton = false;
                                 break;
 
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 showFragment(Constants.ACTIVITIES_MENU_ITEM_POSITION, false);
                                 drawerMenuItemId = Constants.ACTIVITIES_MENU_ITEM_POSITION;
-                                setTitleOfActivityAfterLanguageChanged(loadPreferences(),Constants.ACTIVITIES_MENU_ITEM_POSITION);
+                                setTitleOfActivityAfterLanguageChanged(loadPreferences(), Constants.ACTIVITIES_MENU_ITEM_POSITION);
                                 showEmailSendButton = false;
                                 break;
 
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 showFragment(Constants.SERVICES_MENU_ITEM_POSITION, false);
                                 drawerMenuItemId = Constants.SERVICES_MENU_ITEM_POSITION;
-                                setTitleOfActivityAfterLanguageChanged(loadPreferences(),Constants.SERVICES_MENU_ITEM_POSITION);
+                                setTitleOfActivityAfterLanguageChanged(loadPreferences(), Constants.SERVICES_MENU_ITEM_POSITION);
                                 showEmailSendButton = false;
                                 break;
 
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 showFragment(Constants.RESIDENTIAL_HOMES_MENU_ITEM_POSITION, false);
                                 drawerMenuItemId = Constants.RESIDENTIAL_HOMES_MENU_ITEM_POSITION;
-                                setTitleOfActivityAfterLanguageChanged(loadPreferences(),Constants.RESIDENTIAL_HOMES_MENU_ITEM_POSITION);
+                                setTitleOfActivityAfterLanguageChanged(loadPreferences(), Constants.RESIDENTIAL_HOMES_MENU_ITEM_POSITION);
                                 showEmailSendButton = false;
                                 break;
 
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 showFragment(Constants.CONTACT_MENU_ITEM_POSITION, true);
                                 drawerMenuItemId = Constants.CONTACT_MENU_ITEM_POSITION;
-                                setTitleOfActivityAfterLanguageChanged(loadPreferences(),Constants.CONTACT_MENU_ITEM_POSITION);
+                                setTitleOfActivityAfterLanguageChanged(loadPreferences(), Constants.CONTACT_MENU_ITEM_POSITION);
                                 showEmailSendButton = true;
                                 break;
 
@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(
                 Constants.APP_PREFERENCES, MODE_PRIVATE);
 
-       // Log.i("MainActivity", "language = " + sharedPreferences.getInt(Constants.LANGUAGE, Constants.LANGUAGE_SERBIAN));
+        // Log.i("MainActivity", "language = " + sharedPreferences.getInt(Constants.LANGUAGE, Constants.LANGUAGE_SERBIAN));
 
         return sharedPreferences.getInt(Constants.LANGUAGE, Constants.LANGUAGE_SERBIAN);
 
@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Shows the map
      *
-     * @param geoLocation
+     * @param geoLocation Uri from link to map
      */
 
     private void showMap(Uri geoLocation) {
@@ -216,8 +216,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Attach a fragment to this Activity
      *
-     * @param drawerMenuItemId          selected drawer menu item
-     * @param showEmailSendButton       show or not the email send button
+     * @param drawerMenuItemId    selected drawer menu item
+     * @param showEmailSendButton show or not the email send button
      */
 
     private void showFragment(int drawerMenuItemId, boolean showEmailSendButton) {
@@ -299,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Sets all texts in a drawer
      *
-     * @param language
+     * @param language the user's preferred language
      */
 
     private void setTitlesForDrawer(int language) {
@@ -416,8 +416,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Changes the title of this Activity
      *
-     * @param language
-     * @param drawerMenuItemId
+     * @param language the user's preferred language
+     * @param drawerMenuItemId drawer's menu item
      */
 
     private void setTitleOfActivityAfterLanguageChanged(int language, int drawerMenuItemId) {

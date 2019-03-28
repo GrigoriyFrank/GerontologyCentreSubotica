@@ -6,15 +6,14 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.internal.EverythingIsNonNull;
 import rs.gerontoloski.centresuboticaapp.App;
 import rs.gerontoloski.centresuboticaapp.Constants;
 import rs.gerontoloski.centresuboticaapp.R;
-import rs.gerontoloski.centresuboticaapp.retrofit.POJO.media.Media;
 import rs.gerontoloski.centresuboticaapp.retrofit.POJO.page.Page;
 
 import android.os.Handler;
@@ -31,8 +30,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,7 +51,6 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
     private TextView somethingWrongWithServer;
     private Button tryAgainButton;
 
-    private String buildingImageLink;
     private String headerTitle;
     private String copyrightTitle;
 
@@ -72,9 +68,9 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param language              language for page
-     * @param drawerMenuItemId      number for drawerMenuItemId
-     * @param showSendEmailButton   show email send button or not
+     * @param language            language for page
+     * @param drawerMenuItemId    number for drawerMenuItemId
+     * @param showSendEmailButton show email send button or not
      * @return A new instance of fragment PagesFragment.
      */
 
@@ -106,8 +102,8 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
     /**
      * Loads data for page
      *
-     * @param language              language for page
-     * @param drawerMenuItemId      selected drawer menu item
+     * @param language         language for page
+     * @param drawerMenuItemId selected drawer menu item
      */
 
     private void loadDataForHomePageAndOtherPages(int language, int drawerMenuItemId) {
@@ -246,7 +242,7 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-       View rootView = inflater.inflate(R.layout.page_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.page_fragment, container, false);
         noInternetConnection = rootView.findViewById(R.id.no_internet_page_fragment);
         noInternetConnection.setVisibility(View.GONE);
 
@@ -304,7 +300,7 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
     /**
      * For page response
      *
-     * @param pageId           pageId. Take a look to Constants.java
+     * @param pageId pageId. Take a look to Constants.java
      */
     private void pageResponse(int pageId) {
 
@@ -387,15 +383,15 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
     /**
      * For "Home" page response. "Home" page consists of two pages
      *
-     * @param firstPageId
-     * @param secondPageId
+     * @param firstPageId first page
+     * @param secondPageId second page
      */
 
     private void HomePageResponse(int firstPageId, int secondPageId) {
 
         App.getApi().getTwoPagesByIds(firstPageId, secondPageId).enqueue(new Callback<List<Page>>() {
             @Override
-            public void onResponse(Call<List<Page>> call, Response<List<Page>> response) {
+            public void onResponse(@NonNull Call<List<Page>> call, @NonNull Response<List<Page>> response) {
 
                 if (response.isSuccessful() && response.body() != null) {
 
@@ -423,8 +419,6 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
                     contentString.append("file:///android_res/drawable/building.jpg");
                     contentString.append("\"");
                     contentString.append("alt>");
-
-                    Log.i("PagesFragment", "buildingImageLink = " + buildingImageLink);
 
                     for (Page page : pages) {
 
@@ -467,7 +461,7 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
             }
 
             @Override
-            public void onFailure(Call<List<Page>> call, Throwable t) {
+            public void onFailure(@NonNull  Call<List<Page>> call, @NonNull Throwable t) {
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -494,7 +488,7 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
     /**
      * Set titles for texts in html page
      *
-     * @param language
+     * @param language the user's preferred language
      */
     private void setTitles(int language) {
 
@@ -565,6 +559,7 @@ public class PagesFragment extends Fragment implements View.OnClickListener {
             }
 
             mCustomViewContainer = getView().findViewById(R.id.video_container);
+
             mCustomViewContainer.addView(view);
             mCustomView = view;
             mCustomViewCallback = callback;
